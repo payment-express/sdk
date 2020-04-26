@@ -1,0 +1,20 @@
+{
+    "name": "payment-express/sdk",
+    "description": "pe sdk",
+    "type": "library",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "proger",
+            "email": "proger@proger.proger"
+        }
+    ],
+    "require": {
+        "php" : ">=7.3"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "PaymentExpress\\" : "PaymentExpress/"
+        }
+    }
+}
