@@ -55,7 +55,7 @@ class Pay
 
 	public function addPayload(array $payload) : Pay
 	{
-		return $this->addCustom('payload', $payload);
+		return $this->addCustom('payload', json_encode($payload));
 	}
 
 	public function addSuccessUrl(string $url) : Pay
