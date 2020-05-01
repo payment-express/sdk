@@ -23,7 +23,7 @@ class Merchant {
 		$data['token'] = $this->token;
 		ksort($data);
 
-		$sign = implode(";", $data);
+		$sign = implode(":", $data);
 		$sign = hash('sha256', $sign);
 		$sign = strtolower($sign);
 
